@@ -1,30 +1,13 @@
- /* Estilo base para aplicar a fonte Orbitron */
-        body {
-            font-family: 'Orbitron', sans-serif;
-        }
-        /* Scrollbar customizada */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #1a1a1a; 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #dc2626; 
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #ef4444; 
-        }
-        /* Animação para o Toast de Desfazer */
-        @keyframes slideDown {
-            from { transform: translateY(-100%); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        .toast-enter {
-            animation: slideDown 0.5s ease-out forwards;
-        }
-        /* Efeito de desfoque para ocultar conteúdo */
-        .blur-sm {
-            filter: blur(2px);
-        }
+/* Garante que todos os elementos usem a fonte Orbitron */
+body, * {
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+/* Regras originais */
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#1a1a1a}
+::-webkit-scrollbar-thumb{background:#dc2626;border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:#ef4444}
+@keyframes slideDown{from{transform:translateY(-100%);opacity:0}to{transform:translateY(0);opacity:1}}
+.toast-enter{animation:slideDown 0.5s ease-out forwards}
+.blur-sm{filter:blur(2px)}
