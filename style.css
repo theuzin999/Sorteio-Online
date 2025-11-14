@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-/* Aplicando a fonte com alta prioridade no corpo e no contêiner principal */
-body, #root {
-    font-family:'Orbitron',sans-serif !important;
-}
 
 ::-webkit-scrollbar{width:8px}
 ::-webkit-scrollbar-track{background:#1a1a1a}
